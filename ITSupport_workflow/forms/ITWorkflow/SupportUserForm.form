@@ -1,0 +1,89 @@
+{
+    "id": "supportuserform",
+    "schemaVersion": "1.1.0",
+    "name": "SupportUserForm",
+    "revision": "1",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "tickets_detail",
+            "type": "section",
+            "title": "Tickets Detail",
+            "content": [
+                {
+                    "id": "details",
+                    "type": "subsection",
+                    "title": "Details",
+                    "content": [
+                        {
+                            "id": "requester",
+                            "type": "string",
+                            "label": "Requester",
+                            "readOnly": true,
+                            "value": "${context.requester}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "tickey",
+                            "type": "string",
+                            "label": "Tickey Type",
+                            "readOnly": true,
+                            "value": "${context.TicketType}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "description",
+                            "type": "string",
+                            "label": "Description",
+                            "readOnly": true,
+                            "value": "${context.Description}",
+                            "control": {
+                                "type": "TextArea",
+                                "properties": {
+                                    "height": "small"
+                                }
+                            },
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hr_details",
+            "type": "section",
+            "title": "HR Details",
+            "content": [
+                {
+                    "id": "hr_name",
+                    "type": "string",
+                    "label": "HR name",
+                    "readOnly": true,
+                    "value": "${context.HR.fullname}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
