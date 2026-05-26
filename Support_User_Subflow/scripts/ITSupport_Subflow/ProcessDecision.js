@@ -1,0 +1,1 @@
+$.context.Decision = $.usertasks.usertask1.last.decision;

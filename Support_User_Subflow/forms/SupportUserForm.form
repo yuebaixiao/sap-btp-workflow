@@ -84,6 +84,11 @@
             "id": "reject",
             "text": "Reject",
             "decisionType": "negative"
+        },
+        {
+            "id": "reject_all",
+            "text": "Reject All",
+            "decisionType": "negative"
         }
     ]
 }

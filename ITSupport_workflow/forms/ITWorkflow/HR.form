@@ -59,7 +59,7 @@
                     "type": "string",
                     "label": "Name",
                     "readOnly": true,
-                    "value": "${context.Support_User.fullname}",
+                    "value": "${context.Support_User[0].fullname}",
                     "constraints": {
                         "required": false
                     }
@@ -69,7 +69,7 @@
                     "type": "string",
                     "label": "Email",
                     "readOnly": true,
-                    "value": "${context.Support_User.email}",
+                    "value": "${context.Support_User[0].email}",
                     "constraints": {
                         "required": false
                     }
@@ -79,7 +79,7 @@
                     "type": "string",
                     "label": "Designation",
                     "readOnly": true,
-                    "value": "${context.Support_User.designation}",
+                    "value": "${context.Support_User[0].designation}",
                     "constraints": {
                         "required": false
                     }
